@@ -1,0 +1,180 @@
+.contenedor{
+	max-width: 850px;
+	margin: auto;
+}
+
+header{
+	background: #18BC9C;
+}
+
+header nav{
+	background: #2C3E50;
+}
+
+h1, h2, h3{
+
+	font-family: Montserrat;
+	text-transform: uppercase;
+}
+
+h3{
+	color: white;
+	font-size: 20px;
+}
+
+h1{
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	margin: 20px;
+}
+
+header article{
+	color: white;
+	text-align: center;
+}
+
+p{
+	font-family: "Open Sans";
+}
+
+.top{
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+	align-items: center;
+}
+
+.headerpadding{
+	padding:90px;
+}
+
+header ul{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+/*
+.line:before{
+	content: "";
+	width: 100%;
+	height: 5px; 
+	background: white;
+}VERIFICAR!!no funciona*/
+
+header ul li a{
+	text-decoration: none;
+	font-family: Montserrat;
+	color: white;
+	font-size: 10px;
+	text-transform: uppercase;
+	margin: 10px;
+
+}
+
+header img{
+	margin: 20px;
+}
+
+header p{
+	margin: 20px;
+}
+
+/*PORTFOLIO-------------------------*/
+
+.imgportfolio{
+	width: 100%;
+	height: auto;
+}
+
+
+.port{
+	text-align: center;
+	padding-top: 70px;
+}
+
+.portfolio{
+	padding: 25px;
+}
+
+.portfolio li{
+	display: inline-block;
+	width: 32%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+h2{
+	font-size: 35px;
+	padding-bottom: 30px;
+}
+
+/*ABOUT*/
+
+.about{
+	background-color: #18BC9C; 
+	padding: 70px 0;
+}
+
+.about h2{
+	color: white;
+	text-align: center;
+}
+
+.about article{
+	width: 70%;
+	margin: auto;
+	padding: 30px 0;
+
+}
+
+.about div{
+	display: flex;
+}
+
+.about p{
+	text-align: left;
+	line-height: 18px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.line{
+	margin: auto;
+
+}
+.about{
+	color: white;
+	text-align: center;
+}
+
+.about a{
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 10px;
+	font-family: "Open Sans";
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+}
+
+.ion-ios-download{
+	font-size: 20px;
+}
+
+/*CONTACT ME*/
+.contact{
+	text-align: center;
+	padding: 50px 0;
+	color: black;
+	font-size: 40px;
+}
+
+.contact form input, .contact form textarea{
+	display: block;
+	width: 100%;
+}
+
+.formulario{
+	padding: 20px;
+}

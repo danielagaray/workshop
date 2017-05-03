@@ -1,3 +1,25 @@
+
+.line:before{
+
+	content: "";
+	width: 50px;
+	height: 3px;
+	background: white;
+	display: inline-block;
+	margin-bottom: 2px;
+
+}
+
+.line:after{
+
+	content: "";
+	width: 50px;
+	height: 3px;
+	background: white;
+	display: inline-block;
+	margin-bottom: 2px;
+
+}
 .contenedor{
 	max-width: 850px;
 	margin: auto;
@@ -5,6 +27,7 @@
 
 header{
 	background: #18BC9C;
+	padding-bottom: 40px;
 }
 
 header nav{
@@ -45,15 +68,39 @@ p{
 	align-items: center;
 }
 
-.headerpadding{
-	padding:90px;
-}
 
 header ul{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
+
+header img{
+	padding-top: 70px;
+}
+
+.menuresp{
+	border: 1px solid white;
+	border-radius: 15px;
+	display: flex;
+	color: white;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 100%;
+	padding:15px;
+	text-transform: uppercase;
+	display: none;
+}
+
+
+
+.menunavegador{
+	font-family: 'Montserrat';
+}
+
+
+
+
 /*
 .line:before{
 	content: "";
@@ -76,12 +123,39 @@ header img{
 	margin: 20px;
 }
 
-header p{
+header article p{
 	margin: 20px;
 }
 
 /*PORTFOLIO-------------------------*/
+.port li a:hover{
+	background-color:#18BC9C;
+	opacity: 0.3;
+	mix-blend-mode: multiply;
+	
+}
 
+.port .line:before{
+
+	content: "";
+	width: 50px;
+	height: 3px;
+	background: black;
+	display: inline-block;
+	margin-bottom: 2px;
+
+}
+
+.port .line:after{
+
+	content: "";
+	width: 50px;
+	height: 3px;
+	background: black;
+	display: inline-block;
+	margin-bottom: 2px;
+
+}
 .imgportfolio{
 	width: 100%;
 	height: auto;
@@ -110,6 +184,7 @@ h2{
 }
 
 /*ABOUT*/
+
 
 .about{
 	background-color: #18BC9C; 
@@ -163,11 +238,36 @@ h2{
 }
 
 /*CONTACT ME*/
+
+.contact .line:before{
+
+	content: "";
+	width: 50px;
+	height: 3px;
+	background: black;
+	display: inline-block;
+	margin-bottom: 2px;
+
+}
+
+.contact .line:after{
+
+	content: "";
+	width: 50px;
+	height: 3px;
+	background: black;
+	display: inline-block;
+	margin-bottom: 2px;
+
+}
+
+
 .contact{
 	text-align: center;
 	padding: 50px 0;
 	color: black;
 	font-size: 40px;
+	
 }
 
 .contact form input, .contact form textarea{
@@ -175,6 +275,168 @@ h2{
 	width: 100%;
 }
 
-.formulario{
+.formulario input, .formulario textarea{
 	padding: 20px;
+	border-style: solid hidden hidden hidden;
+	border-width: 1px;
+	border-color: lightgrey;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	font-size: 
+}
+
+.formulario{
+
+	width: 70%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+input[type=submit]{
+
+	background-color: #18BC9C;
+	color: white;
+	border-radius: 15px;
+}
+
+form div{
+	width: 15%;
+	min-width: 100px;
+}
+
+/*FOOTER*/
+
+footer{
+	background-color: #2C3E50;	
+	text-align: center;
+	color: white;
+	padding-top:40px;
+}
+
+footer article{
+	margin: 20px;
+	flex: 1;
+}
+
+.copyright{
+	background-color: #233140;
+	padding: 20px;
+	color: white;
+	font-family: 'Open Sans';
+}
+
+.futer{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+
+footer ul{
+
+	display: flex;
+	font-size: 15px;
+	justify-content: center;
+	
+}
+
+footer ul li{
+	padding: 10px;
+}
+
+footer a{
+	border:1px solid white;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	color: white;
+	display: inline-block;
+	padding-top: 7px;
+	box-sizing: border-box;
+
+}
+
+.alink{
+	border: none;
+	text-decoration: none;
+	color: #18BC9C;
+	font-weight: 600;
+	display: inline;
+
+}
+
+footer h3{
+	margin-bottom: 20px;
+}
+
+.ion-android-star{
+	font-size: 25px;
+}
+
+
+
+/*queries*/
+
+@media screen and (max-width: 680px){
+	header ul{
+	display: none;
+	justify-content: space-around;
+	align-items: center;
+	}
+
+	.menuresp{
+		display: inline-block;
+	}
+
+	.menuresp span, .menuresp p{
+		display: inline;
+	}
+ 
+	.futer{
+	flex-direction: column;
+	}
+
+	.alink{
+		display: inline;
+	}
+
+	footer ul{
+		justify-content: center;
+	}
+
+
+
+}
+
+@media screen and (max-width: 450px){
+
+	
+	.portfolio li{
+		display: block;
+		width: 100%;
+	}
+
+	.about div{
+	display: inline-block;
+	}
+
+	.formulario{
+		width: 100%;
+	}
+
+	.formulario input, .formulario textarea{
+		width: 100%;
+		padding: 20px 0;
+	}
+	
+
+	.futer{
+	flex-direction: column;
+	}
+
+	.alink{
+		display: inline;
+	}
+
+
 }

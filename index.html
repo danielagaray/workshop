@@ -21,9 +21,18 @@
 					<li><a href="about.html">About</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
+
+				<div class="menuresp">
+					<p class="menunavegador">Menu</p>
+					<span class="ion-navicon-round"></span>
+				</div>
+
+				
 			</div>
+
+
 		</nav>
-		<div class="contenedor headerpadding" >
+		<div class="contenedor" >
 			<article>
 				<img src="images/profile.png">
 				<h1>Nombre Apellido</h1>
@@ -32,7 +41,12 @@
 				</span>
 				<p>Web Developer - Graphic Artists - User Experience Design</p>
 			</article>
+
+			
 		</div>
+
+		
+
 	</header>
 
 	<section class="port">
@@ -112,56 +126,77 @@
 			<span class="line">
 					<span class="ion-android-star"></span>
 			</span>
-			<form method="POST" action="enviar.php" enctype="multipart/form-data">
-				<label for="nombre"></label>
-				<input type="text" name="nombre" placeholder="Nombre" required>
+			<div class="formulario" >
+				<form method="POST" action="enviar.php" enctype="multipart/form-data">
+					<label for="nombre"></label>
+					<input type="text" name="nombre" placeholder="Nombre" required>
 
-				<label for="email"></label>
-				<input type="email" name="email" placeholder="Email Address" required>
+					<label for="email"></label>
+					<input type="email" name="email" placeholder="Email Address" required>
 
-				<label for="phone"></label>
-				<input type="number" name="phone" placeholder="Phone Number">
+					<label for="phone"></label>
+					<input type="number" name="phone" placeholder="Phone Number">
 
-				<label for="message"></label>
-				<textarea name="message" placeholder="Message"></textarea>
+					<label for="message"></label>
+					<textarea name="message" placeholder="Message"></textarea>
+					<div>
+						<input type="submit" value="Send" ">
+					</div>
 
-				<input type="submit" value="Send">
 
-
-			</form>
+				</form>
+			</div>
 		</div>
 	</section>
 
 	<footer>
-		<div>
+		<div class="contenedor futer">
 			<article>
 				<h3>Location</h3>
-				<p></p>
+				<p>3481 Melrose Place Beverly Hills, CA 90210</p>
 			</article>
 
-			<article>
-				<h3></h3>
+			<article class="feli">
+				<h3>Around the web</h3>
 				<nav>
 					<ul>
 						<li>
-							<a href="">
-								<span></span>
+							<a href="" >
+								<span class="ion-social-facebook"></span>
 							</a>
 						</li>
-						<li></li>
-						<li></li>
-						<li></li>
+						<li>
+							<a href="">
+								<span class="ion-social-googleplus"></span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="ion-social-twitter"></span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="ion-social-linkedin"></span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="ion-ios-basketball-outline"></span>
+							</a>
+						</li>
 
 
 					</ul>
 				</nav>
 			</article>
 			<article>
-				<h3></h3>
-				<p></p>
+				<h3>About freelancer</h3>
+				<p>Freelancer is a free to use, open source Bootstrap theme created by <a href="#" class="alink">Star Bootstrap</a></p>
 			</article>
-			<p></p>
+			
 		</div>
+		<p class="copyright">Copyright Your Website 2016</p>
 
 	</footer>
 
